@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=16
 #SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=5G
+#SBATCH --mem-per-cpu=8G
 #SBATCH --output=%x.%j.out
 #SBATCH --mail-user=bgramos1@up.edu.ph
 #SBATCH --mail-type=ALL
