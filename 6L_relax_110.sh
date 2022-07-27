@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=8G
 #SBATCH --output=%x.%j.out
-#SBATCH --mail-user=bgramos1@up.edu.ph
+#SBATCH --mail-user=mario3demesa@gmail.com
 #SBATCH --mail-type=ALL
 
 module load qe/6.5_openmpi-4.0.3
