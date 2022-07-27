@@ -1,0 +1,57 @@
+ &control
+    pseudo_dir = './' ,
+    calculation = 'relax'
+    forc_conv_thr = 1.00000e-04
+    !max_seconds = 1.72800e+05
+    verbosity = 'high'
+    nstep = 100
+    prefix = '6L_110'
+    outdir = './tmp_110_6L/'
+    max_seconds = 258000
+    !restart_mode = 'restart'
+ /
+ &system
+    a     =  4.15617
+    b     =  2.93886
+    c     =  28.16371
+    ibrav = 8
+    nat   = 12
+    ntyp  = 2
+    ecutwfc = 45
+    occupations = 'smearing'
+    smearing = 'gaussian'
+    degauss = 0.01
+
+ /
+ &electrons
+    conv_thr = 1.00000e-07
+    electron_maxstep = 200
+    !startingpot = 'atomic'
+    !startingwfc = 'atomic+random'
+ /
+&IONS
+/
+&CELL
+    !cell_factor = 2.5
+/
+
+ATOMIC_SPECIES
+   Au   196.96655  Au.pbe-n-kjpaw_psl.1.0.0.UPF 
+   Ag   107.8682   Ag.pbe-n-kjpaw_psl.1.0.0.UPF 
+
+ATOMIC_POSITIONS {crystal}
+Ag      0.999507   0.999551   0.001884
+Ag      0.499515   0.499541   0.049805
+Ag      0.999506   0.999535   0.103961
+Ag      0.499517   0.499518   0.155492
+Ag      0.999510   0.999488   0.208099
+Ag      0.499498   0.499473   0.260092
+Au      0.999473   0.999465   0.312350
+Au      0.499430   0.499454   0.364848
+Au      0.999430   0.999423   0.418609
+Au      0.499392   0.499406   0.469505
+Au      0.999429   0.999370   0.526166
+Au      0.499401   0.499360   0.572028
+
+K_POINTS (automatic)
+  10 14 1 1 1 1
