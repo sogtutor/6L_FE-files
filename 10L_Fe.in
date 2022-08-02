@@ -1,0 +1,66 @@
+ &control
+    pseudo_dir = './' ,
+    calculation = 'relax'
+    forc_conv_thr = 1.00000e-04
+    verbosity = 'high'
+    nstep = 100
+    prefix = '10L_Fe'
+    max_seconds = 258000
+    restart_mode = 'restart'
+ /
+ &system
+    a = 4.0534186363
+    b	= 2.8661999702
+    c = 28.21367455
+    ibrav = 8
+    nat   = 20
+    ntyp  = 1
+    ecutwfc = 96
+    ecutrho = 364
+    occupations = 'smearing'
+    smearing = 'gaussian'
+    degauss = 0.01
+    nspin = 2
+    starting_magnetization(1) = 0.5
+    Starting_magnetization(2) = -0.5
+
+ /
+ &electrons
+    conv_thr = 1.00000e-07
+    electron_maxstep = 500
+    startingpot = 'atomic'
+    startingwfc = 'atomic+random'
+ /
+&IONS
+/
+&CELL
+    !cell_factor = 2.5
+/
+
+ATOMIC_SPECIES
+   Fe   55.84500  Fe.pbe-spn-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Fe	0.00000000	0.00000000	0.00000000
+Fe	2.02670932	1.43309999	0.00000000
+Fe	0.00000000	1.43309999	2.02670932
+Fe	2.02670932	0.00000000	2.02670932
+Fe	0.00000000	0.00000000	4.05341864
+Fe	2.02670932	1.43309999	4.05341864
+Fe	0.00000000	1.43309999	6.08012795
+Fe	2.02670932	0.00000000	6.08012795
+Fe	0.00000000	0.00000000	8.10683727
+Fe	2.02670932	1.43309999	8.10683727
+Fe	0.00000000	1.43309999	10.13354659
+Fe	2.02670932	0.00000000	10.13354659
+Fe	0.00000000	1.43309999	12.16025591
+Fe	2.02670932	0.00000000	12.16025591
+Fe	0.00000000	1.43309999	14.18696523
+Fe	2.02670932	0.00000000	14.18696523
+Fe	0.00000000	1.43309999	16.21367455
+Fe	2.02670932	0.00000000	16.21367455
+Fe	0.00000000	1.43309999	18.24038387
+Fe	2.02670932	0.00000000	18.24038387
+
+K_POINTS (automatic)
+  9 13 1 1 1 1
